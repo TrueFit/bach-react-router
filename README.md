@@ -30,10 +30,10 @@ _Example_
 import React from 'react';
 import {compose} from '@truefit/bach';
 import {withHistory} from '@truefit/bach-react-router';
-import {History, LocationState} from 'history';
+import {History} from 'history';
 
 type Props = {
-  history: History<LocationState>;
+  history: History;
   handeClick: () => void;
 }
 
@@ -90,10 +90,10 @@ _Example_
 import React from 'react';
 import {compose} from '@truefit/bach';
 import {withLocation} from '@truefit/bach-react-router';
-import {Location, LocationState} from 'history';
+import {Location} from 'history';
 
 type Props = {
-  location: Location<LocationState>;
+  location: Location;
 }
 
 const Component = ({location}: Props) => (
