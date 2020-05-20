@@ -1,13 +1,15 @@
 import {EnhancerResult} from '@truefit/bach';
 import {useRouteMatch} from 'react-router';
 
-export default <T>(route: string) => (): EnhancerResult => {
+export default <T>(route: string | undefined) => (): EnhancerResult => {
+  const arg = route ? `'${route}'` : '';
+
   return {
     dependencies: {
       useRouteMatch,
     },
     initialize: `
-      const match = useRouteMatch('${route}');
+      const match = useRouteMatch(${arg});
     `,
     props: ['match'],
   };
