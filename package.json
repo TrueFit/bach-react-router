@@ -1,6 +1,6 @@
 {
   "name": "@truefit/bach-react-router",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "connect your composed components to react-router",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -29,10 +29,10 @@
   ],
   "homepage": "https://github.com/TrueFit/bach-react-router#readme",
   "peerDependencies": {
-    "@truefit/bach": "^2.x",
-    "history": "^4.x",
-    "react": "^16.x",
-    "react-router": "^5.x"
+    "@truefit/bach": "2.x",
+    "history": "4.x",
+    "react": "16.x",
+    "react-router": "5.x"
   },
   "devDependencies": {
     "@truefit/bach": "^2.0.9",
